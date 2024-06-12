@@ -23,6 +23,12 @@ export default function RootLayout({ children }) {
       <body
         className={`min-h-screen flex flex-col ${acorn.className} ${currentBg}`}
       >
+        <link
+          rel="icon"
+          href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Circle-icons-dev.svg"
+          sizes="any"
+        />
+
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

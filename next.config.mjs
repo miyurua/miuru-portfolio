@@ -6,6 +6,7 @@ const nextConfig = {
       "avatars.githubusercontent.com",
       "images.unsplash.com",
       "images.ctfassets.net",
+      "upload.wikimedia.org",
     ],
   },
 };
