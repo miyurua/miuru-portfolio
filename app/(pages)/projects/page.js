@@ -18,7 +18,7 @@ export default async function ProjectsPage() {
       <div>
         {data.items.map((project) => {
           return (
-            <div>
+            <div className="pt-12">
               <ProjectInfoCard key={project.sys.id} project={project} />
             </div>
           );

@@ -73,7 +73,7 @@ const About = () => {
             </div>
           </Link>
         </div>
-        <div className="relative group cursor-pointer">
+        <div className="relative group">
           <Link
             href={
               "https://unsplash.com/photos/photography-of-people-near-street-during-daytime-8weolGgaa9w"
