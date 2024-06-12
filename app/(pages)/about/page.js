@@ -1,5 +1,6 @@
 import TimelineCard from "@/components/TimelineCard";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -49,6 +50,49 @@ const About = () => {
           company={"Techlabs Global"}
           timespan={"2022 - 2023"}
         />
+      </div>
+      {/* Images section */}
+      <div className="flex flex-row gap-6">
+        <div className="relative group cursor-pointer">
+          <Link
+            href={
+              "https://unsplash.com/photos/aerial-view-of-trees-and-ocean-CKEmZAw0Z8c"
+            }
+            target="_blank"
+          >
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1552055569-d54ae89a11b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              width={700}
+              height={200}
+              className="rounded-xl"
+            />
+            <div className="absolute bottom-3 left-3 p-2 bg-slate-300 rounded-xl bg-opacity-75 text-white text-sm hidden group-hover:block">
+              Lahugala, Sri lanka
+            </div>
+          </Link>
+        </div>
+        <div className="relative group cursor-pointer">
+          <Link
+            href={
+              "https://unsplash.com/photos/photography-of-people-near-street-during-daytime-8weolGgaa9w"
+            }
+            target="_blank"
+          >
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1569669568849-39a2939a4b65?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              }
+              width={350}
+              height={200}
+              className="rounded-xl"
+            />
+            <div className="absolute bottom-3 left-3 p-2 bg-slate-300 rounded-xl bg-opacity-75 text-white text-sm hidden group-hover:block">
+              Colombo, Sri lanka
+            </div>
+          </Link>
+        </div>
       </div>
     </main>
   );
