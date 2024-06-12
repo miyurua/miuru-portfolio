@@ -12,8 +12,8 @@ export default async function ProjectsPage() {
   const data = await fetchProjects();
 
   return (
-    <main className="flex flex-col max-w-6xl mx-auto">
-      <p className="text-4xl sm:text-9xl">Projects.</p>
+    <main className="flex flex-col max-w-xs sm:max-w-8xl mx-auto animate-flyIn sm:max-w-5xl">
+      <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">Projects.</p>
 
       <div>
         {data.items.map((project) => {

@@ -12,24 +12,25 @@ const ProjectInfoCard = ({ project }) => {
     coverImage,
     content,
     github,
-    background,
+    background = "bg-[#2A5F48] text-white",
   } = project.fields;
 
   return (
-    <main className="border-2 flex flex-col text-white bg-[#2A5F48] rounded-xl max-w-4xl mx-auto relative group hover:opacity-75">
+    <main
+      className={`border-2 text-sm sm:text-lg flex flex-col rounded-t-[50px] max-w-xs sm:max-w-4xl mx-auto relative group hover:opacity-75 duration-500 ${background} animate-flyIn`}
+    >
       <Link href={github} target="_blank">
-        <div className="p-12">
-          <p className="text-3xl">{title}</p>
+        <div className="p-12 flex flex-col gap-2">
+          <p className="text-4xl text-[#364442]">{title}</p>
           <p>Collaborator(s) - {collaboratorName}</p>
           <p>Techstack - {techstack}</p>
           <p>{exerpt}</p>
         </div>
-        <img
-          src={coverImage.fields.file.url}
-          className="rounded-b-xl mx-auto"
-        />
-        <div className="absolute left-1/2 bottom-1/2 p-2 bg-black rounded-xl text-white text-sm hidden group-hover:block z-10">
-          <FaGithub className="text-4xl" />
+        <img src={coverImage.fields.file.url} className="mx-auto" />
+        <div className="absolute inset-0 flex justify-center items-center p-2">
+          <div className="bg-black rounded-xl text-white text-sm hidden group-hover:block group-hover:animate-flyIn z-10">
+            <FaGithub className="text-4xl m-2" />
+          </div>
         </div>
       </Link>
     </main>

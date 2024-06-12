@@ -14,7 +14,7 @@ export default function Home() {
             Frontend Developer | NLP Enthusiast
           </p>
         </div>
-        <p className="text-center max-w-2xl text-slate-600 -mt-12">
+        <p className="text-center max-w-xl text-sm sm:text-xl -mt-12">
           Hey there! 👋 Welcome to my portfolio. I'm a Frontend Developer
           passionate about web development, mobile apps and Natural Language
           Processing (NLP). Glad you're here!
@@ -25,7 +25,7 @@ export default function Home() {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
           <p className="text-4xl sm:text-9xl">Services.</p>
-          <p>
+          <p className="text-sm sm:text-xl">
             Take a look at the services I offer, and if you don't find what
             you're looking for, feel free to reach out
           </p>
