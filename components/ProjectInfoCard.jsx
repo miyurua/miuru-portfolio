@@ -21,10 +21,12 @@ const ProjectInfoCard = ({ project }) => {
     >
       <Link href={github} target="_blank">
         <div className="p-12 flex flex-col gap-2">
-          <p className="text-4xl text-[#364442]">{title}</p>
-          <p>Collaborator(s) - {collaboratorName}</p>
-          <p>Techstack - {techstack}</p>
-          <p>{exerpt}</p>
+          <p className="text-4xl font-bold">{title}</p>
+          <p className="text-xs sm:text-lg">
+            Collaborator(s) - {collaboratorName}
+          </p>
+          <p className="text-xs sm:text-lg">Techstack - {techstack}</p>
+          <p className="text-xs sm:text-lg">{exerpt}</p>
         </div>
         <img src={coverImage.fields.file.url} className="mx-auto" />
         <div className="absolute inset-0 flex justify-center items-center p-2">

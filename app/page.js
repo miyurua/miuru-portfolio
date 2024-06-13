@@ -24,7 +24,7 @@ export default function Home() {
       {/* Services Section */}
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
-          <p className="text-4xl sm:text-9xl">Services.</p>
+          <p className="text-4xl sm:text-9xl text-[#2A5F48]">Services.</p>
           <p className="text-sm sm:text-xl">
             Take a look at the services I offer, and if you don't find what
             you're looking for, feel free to reach out
