@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col max-w-8xl sm:max-w-4xl items-center gap-24">
         <div className="hidden sm:inline-block" />
         <div className="flex flex-col items-center gap-4">
-          <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">
+          <p className="text-4xl sm:text-8xl font-bold text-[#2A5F48]">
             Hi. I'm Miuru.
           </p>
           <p className="text-xs sm:text-5xl">
@@ -24,7 +24,7 @@ export default function Home() {
       {/* Services Section */}
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
-          <p className="text-4xl sm:text-9xl text-[#2A5F48]">Services.</p>
+          <p className="text-4xl sm:text-8xl text-[#2A5F48]">Services.</p>
           <p className="text-sm sm:text-xl">
             Take a look at the services I offer, and if you don't find what
             you're looking for, feel free to reach out

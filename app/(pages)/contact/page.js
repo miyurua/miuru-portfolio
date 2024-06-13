@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <main className="flex flex-col max-w-xs sm:max-w-4xl mx-auto animate-flyIn gap-12">
-      <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">Contact.</p>
+      <p className="text-4xl sm:text-8xl font-bold text-[#2A5F48]">Contact.</p>
       <div className="flex flex-col space-y-6 items-center justify-center mb-4 md:mb-0 max-w-lg mx-auto bg-[#F4EEE6] rounded-br-[50px] rounded-tl-[50px] p-10">
         <div className="flex justify-start">
           <Image

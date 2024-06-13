@@ -9,7 +9,7 @@ const About = () => {
         <div className="hidden sm:inline-block" />
         <div className="flex flex-col items-center gap-12 animate-flyIn">
           {/* Add animation class */}
-          <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">
+          <p className="text-4xl sm:text-8xl font-bold text-[#2A5F48]">
             I'm Miuru.
           </p>
           <div className="flex flex-col sm:flex-row sm:gap-12 items-center">
