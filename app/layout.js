@@ -30,7 +30,14 @@ export default function RootLayout({ children }) {
         />
 
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow">
+          {children}
+          <script
+            defer
+            src="https://app.fastbots.ai/embed.js"
+            data-bot-id={process.env.MIURU_BOT_ID}
+          />
+        </main>
         <Footer />
       </body>
     </html>
