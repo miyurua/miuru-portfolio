@@ -1,5 +1,8 @@
 import Resume from "@/components/Resume";
 import Service from "@/components/Service";
+import { Nunito_Sans } from "next/font/google";
+
+const nunito_Sans = Nunito_Sans({ subsets: ["latin"], weight: ["300"] });
 
 export default function Home() {
   return (
@@ -14,7 +17,9 @@ export default function Home() {
             Frontend Developer | NLP Enthusiast
           </p>
         </div>
-        <p className="text-center max-w-xl text-sm sm:text-xl -mt-12">
+        <p
+          className={`text-center max-w-xl text-sm sm:text-xl -mt-12 ${nunito_Sans.className}`}
+        >
           Hey there! 👋 Welcome to my portfolio. I'm a Frontend Developer
           passionate about web development, mobile apps and Natural Language
           Processing (NLP). Glad you're here!
@@ -25,7 +30,7 @@ export default function Home() {
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
           <p className="text-4xl sm:text-8xl text-[#2A5F48]">Services.</p>
-          <p className="text-sm sm:text-xl">
+          <p className={`text-sm sm:text-xl ${nunito_Sans.className}`}>
             Take a look at the services I offer, and if you don't find what
             you're looking for, feel free to reach out
           </p>

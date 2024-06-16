@@ -1,6 +1,11 @@
 import TimelineCard from "@/components/TimelineCard";
 import Image from "next/image";
 import Link from "next/link";
+import { Poppins } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
+
+const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
+const nunito_Sans = Nunito_Sans({ subsets: ["latin"], weight: ["300"] });
 
 const About = () => {
   return (
@@ -24,7 +29,7 @@ const About = () => {
               <p className="text-xl sm:text-6xl font-extrabold">
                 I'm a Frontend Developer from Colombo, Sri Lanka
               </p>
-              <p className="text-sm sm:text-xl">
+              <p className={`text-sm sm:text-xl ${nunito_Sans.className}`}>
                 I've been honing my skills and creating engaging web experiences
                 for the past 2 years. My journey in frontend development has
                 allowed me to work with various modern technologies and
