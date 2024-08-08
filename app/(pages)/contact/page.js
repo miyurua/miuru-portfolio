@@ -2,9 +2,17 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import { Nunito_Sans } from "next/font/google";
+import localfont from "@next/font/local";
 
-const nunito_Sans = Nunito_Sans({ subsets: ["latin"], weight: ["300"] });
+const ttCommins = localfont({
+  src: "../../../myfonts/TTCommonsLight.otf",
+  variable: "-font-ttCommins",
+});
+
+const acornRegular = localfont({
+  src: "../../../myfonts/acorn-7.ttf",
+  variable: "-font-acorn",
+});
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,9 +36,9 @@ const Contact = () => {
 
   return (
     <main className="flex flex-col max-w-xs sm:max-w-4xl mx-auto animate-flyIn gap-12">
-      <p className="text-4xl sm:text-8xl font-bold text-[#2A5F48]">Contact.</p>
+      <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">Contact.</p>
       <div
-        className={`flex flex-col space-y-6 items-center justify-center mb-4 md:mb-0 max-w-lg mx-auto bg-[#F4EEE6] rounded-br-[50px] rounded-tl-[50px] p-10 ${nunito_Sans.className}`}
+        className={`flex flex-col space-y-6 items-center justify-center mb-4 md:mb-0 max-w-lg mx-auto bg-[#F4EEE6] rounded-br-[50px] rounded-tl-[50px] p-10 ${ttCommins.className}`}
       >
         <div className="flex justify-start">
           <Image

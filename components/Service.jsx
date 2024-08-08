@@ -1,4 +1,10 @@
 import Image from "next/image";
+import localfont from "@next/font/local";
+
+const acornRegular = localfont({
+  src: "../myfonts/acorn-7.ttf",
+  variable: "-font-acorn",
+});
 
 const Service = ({ link, bgColor, title }) => {
   return (
@@ -9,7 +15,11 @@ const Service = ({ link, bgColor, title }) => {
       }
     >
       <div className="flex flex-col pt-6">
-        <p className="text-end text-lg sm:text-3xl -mr-3">{title}</p>
+        <p
+          className={`text-end text-lg sm:text-3xl -mr-3 ${acornRegular.className}`}
+        >
+          {title}
+        </p>
         <Image src={link} height={400} width={400} />
       </div>
     </main>

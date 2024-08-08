@@ -1,8 +1,16 @@
 import Link from "next/link";
+import localfont from "@next/font/local";
+
+const acornRegular = localfont({
+  src: "../myfonts/acorn-7.ttf",
+  variable: "-font-acorn",
+});
 
 const Footer = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between w-screen sm:w-2/5 mx-auto gap-10 text-xs sm:text-lg p-6">
+    <div
+      className={`flex flex-col sm:flex-row items-center sm:items-start sm:justify-between w-screen sm:w-2/5 mx-auto gap-10 text-xs sm:text-lg p-6 ${acornRegular.className}`}
+    >
       <div className="flex flex-row  gap-2 text-green-800">
         <p>© 2024</p>
         <p>Miuru Abeysiriwardana</p>

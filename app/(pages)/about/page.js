@@ -1,22 +1,32 @@
 import TimelineCard from "@/components/TimelineCard";
 import Image from "next/image";
 import Link from "next/link";
-import { Poppins } from "next/font/google";
-import { Nunito_Sans } from "next/font/google";
+import localfont from "@next/font/local";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
-const nunito_Sans = Nunito_Sans({ subsets: ["latin"], weight: ["300"] });
+const ttCommins = localfont({
+  src: "../../../myfonts/TTCommonsLight.otf",
+  variable: "-font-ttCommins",
+});
+
+const acornRegular = localfont({
+  src: "../../../myfonts/acorn-7.ttf",
+  variable: "-font-acorn",
+});
 
 const About = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12 gap-12">
-      <div className="flex flex-col max-w-8xl sm:max-w-5xl items-center gap-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 gap-12 max-w-7xl mx-auto">
+      <div className="flex flex-col items-center gap-24">
         <div className="hidden sm:inline-block" />
-        <div className="flex flex-col items-center gap-12 animate-flyIn">
+        <div className="flex flex-col items-center gap-3 sm:gap-5 animate-flyIn">
           {/* Add animation class */}
-          <p className="text-4xl sm:text-8xl font-bold text-[#2A5F48]">
+          <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">
             I'm Miuru.
           </p>
+          <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">
+            A Developer.
+          </p>
+
           <div className="flex flex-col sm:flex-row sm:gap-12 items-center">
             <Image
               src={"https://avatars.githubusercontent.com/u/55921070?v=4"}
@@ -24,12 +34,14 @@ const About = () => {
               height={300}
               className="rounded-t-full"
             />
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 max-w-xl">
               <div />
-              <p className="text-xl sm:text-6xl font-extrabold">
+              <p
+                className={`text-xl sm:text-6xl font-extrabold ${acornRegular.className}`}
+              >
                 I'm a Frontend Developer from Colombo, Sri Lanka
               </p>
-              <p className={`text-sm sm:text-xl ${nunito_Sans.className}`}>
+              <p className={`text-xl sm:text-2xl ${ttCommins.className}`}>
                 I've been honing my skills and creating engaging web experiences
                 for the past 2 years. My journey in frontend development has
                 allowed me to work with various modern technologies and

@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       animation: {
-        flyIn: "flyIn 0.3s ease-in",
+        flyIn: "flyIn 0.5s ease-in",
       },
     },
   },
