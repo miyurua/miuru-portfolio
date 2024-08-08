@@ -18,7 +18,10 @@ const page = () => {
       <p className="text-4xl sm:text-9xl font-bold text-[#2A5F48]">
         Mobile Development.
       </p>
-      <div className="flex items-center w-full bg-[#F5EDE5] rounded-3xl">
+      <div
+        className="flex items-center w-full bg-[#F5EDE5]"
+        style={{ borderRadius: "4rem" }}
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 p-10  mx-auto gap-10">
           {mobileDevelopmentWorkflow.steps.map((step) => (
             <StepperItem
